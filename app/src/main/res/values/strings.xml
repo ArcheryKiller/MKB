@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MKB</string>
+    <string name="click_me_to_info">Нажми, \'\n\'чтобы узнать подробнее</string>
 </resources>

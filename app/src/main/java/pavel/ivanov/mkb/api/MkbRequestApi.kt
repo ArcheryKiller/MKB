@@ -6,7 +6,7 @@ data class MkbRequestApi(
     val message: String,
     val messageTitle: String,
     val productState: Int,
-    val rates: List<Rate>,
     val ratesDate: String,
-    val rid: String
+    val rid: String,
+    val rates: List<Rate>
 )

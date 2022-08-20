@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_padding">8dp</dimen>
+    <dimen name="main_text_size">18sp</dimen>
+    <dimen name="main_corner_radius">4dp</dimen>
+    <dimen name="card_info_margin_top">8dp</dimen>
+    <dimen name="margin_bottom_click_me">12dp</dimen>
+</resources>
