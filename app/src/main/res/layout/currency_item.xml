@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/main_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/basic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/main_text_size"
+        tools:text="basic: Text fish" />
+
+    <TextView
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_info_margin_top"
+        android:textSize="@dimen/main_text_size"
+        tools:text="buy: Text fish" />
+
+    <TextView
+        android:id="@+id/currMnemFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_info_margin_top"
+        android:textSize="@dimen/main_text_size"
+        tools:text="currMnemFrom: Text fish" />
+
+    <TextView
+        android:id="@+id/currMnemTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_info_margin_top"
+        android:textSize="@dimen/main_text_size"
+        tools:text="currMnemTo: Text fish" />
+
+    <TextView
+        android:id="@+id/deltaBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_info_margin_top"
+        android:textSize="@dimen/main_text_size"
+        tools:text="deltaBuy: Text fish" />
+
+    <TextView
+        android:id="@+id/deltaSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_info_margin_top"
+        android:textSize="@dimen/main_text_size"
+        tools:text="deltaSale: Text fish" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_info_margin_top"
+        android:textSize="@dimen/main_text_size"
+        tools:text="from: 0" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_info_margin_top"
+        android:textSize="@dimen/main_text_size"
+        tools:text="name: Text fish" />
+
+    <TextView
+        android:id="@+id/sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_info_margin_top"
+        android:textSize="@dimen/main_text_size"
+        tools:text="sale: Text fish" />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_info_margin_top"
+        android:textSize="@dimen/main_text_size"
+        tools:text="to: 0" />
+
+    <TextView
+        android:id="@+id/tp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_info_margin_top"
+        android:textSize="@dimen/main_text_size"
+        tools:text="tp: 0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/end_item_recycler_view"
+        android:background="@color/light_grey" />
+
+</LinearLayout>

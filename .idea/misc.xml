@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/arche/Desktop/Programming/Test Questions/MKB/app/src/main/res/layout/activity_main.xml" value="0.21331521739130435" />
+        <entry key="..\:/Users/arche/Desktop/Programming/Test Questions/MKB/app/src/main/res/layout/currency_item.xml" value="0.20878623188405798" />
         <entry key="..\:/Users/arche/Desktop/Programming/Test Questions/MKB/app/src/main/res/layout/fragment_base_info_api.xml" value="0.21331521739130435" />
+        <entry key="..\:/Users/arche/Desktop/Programming/Test Questions/MKB/app/src/main/res/layout/list_of_currencies.xml" value="0.20878623188405798" />
       </map>
     </option>
   </component>

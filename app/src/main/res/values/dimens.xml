@@ -5,4 +5,5 @@
     <dimen name="main_corner_radius">4dp</dimen>
     <dimen name="card_info_margin_top">8dp</dimen>
     <dimen name="margin_bottom_click_me">12dp</dimen>
+    <dimen name="end_item_recycler_view">2dp</dimen>
 </resources>
