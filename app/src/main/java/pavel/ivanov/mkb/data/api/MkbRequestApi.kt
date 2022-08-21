@@ -1,10 +1,10 @@
-package pavel.ivanov.mkb.api
+package pavel.ivanov.mkb.data.api
 
 data class MkbRequestApi(
     val code: Int,
     val downloadDate: String,
-    val message: String,
-    val messageTitle: String,
+    val message: String?,
+    val messageTitle: String?,
     val productState: Int,
     val ratesDate: String,
     val rid: String,
