@@ -1,4 +1,4 @@
-package pavel.ivanov.mkb.data.api
+package pavel.ivanov.mkb.data.response
 
 data class Rate(
     val basic: String,
