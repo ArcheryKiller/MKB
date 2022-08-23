@@ -1,6 +1,7 @@
 package pavel.ivanov.mkb.data.api
 
 
+import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import kotlinx.coroutines.Deferred
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaType
@@ -10,7 +11,6 @@ import pavel.ivanov.mkb.data.response.MkbRequestApi
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.*
-import retrofit2.http.Headers
 
 
 //https://alpha.as50464.net:29870/moby-pre-44/core?r=BEYkZbmV&d=563B4852-6D4B-49D6-A86E-B273DD520FD2&t=ExchangeRates&v=44
@@ -18,13 +18,8 @@ import retrofit2.http.Headers
 
 interface ICurrencyApi {
 
-    /*@Headers(
-        "User-Agent: Test GeekBrains iOS 3.0.0.182 (iPhone 11; iOS 14.4.1; Scale/2.00; Private)",
-        "Content-Type: application/json",
-        "Accept: application/json"
-    )*/
     @POST(":29870/moby-pre-44/core")
-    fun getCurrencies(
+    suspend fun getCurrencies(
         @Query("r") r: String = "BEYkZbmV",
         @Query("d") d: String = "563B4852-6D4B-49D6-A86E-B273DD520FD2",
         @Query("t") t: String = "ExchangeRates",
@@ -33,7 +28,7 @@ interface ICurrencyApi {
 
     companion object {
         private val jsonObject = JSONObject()
-        private val mediaType = "application/json; charset=utf-8".toMediaType()
+        private val mediaType = "application/json".toMediaType()
 
 
         operator fun invoke(): ICurrencyApi {
@@ -66,11 +61,11 @@ interface ICurrencyApi {
 
             return Retrofit.Builder()
                 .client(okHttpClient)
-                .baseUrl("https://alpha.as50464.net")
+                .baseUrl("https://alpha.as50464.net/")
+                .addCallAdapterFactory(CoroutineCallAdapterFactory())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
                 .create(ICurrencyApi::class.java)
-
         }
     }
 }
